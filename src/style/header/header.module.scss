@@ -1,0 +1,36 @@
+@import "./../colors.module.scss";
+
+.mobileBtn,
+.navBtn {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.navItem {
+  font-size: 1.6rem;
+}
+.logoImg {
+  height: 3rem;
+  width: 17rem;
+}
+
+.container {
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 17rem 1fr;
+  align-items: center;
+  .mobileBtn {
+    display: none;
+  }
+  .navList {
+    display: flex;
+    gap: 3rem;
+    .navLink {
+      color: var(--black);
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+  .siteActionList {
+    justify-content: end;
+  }
+}

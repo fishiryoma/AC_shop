@@ -1,4 +1,4 @@
-import styles from "./../../style/progressControl.module.scss";
+import styles from "./../../style/payment/progressControl.module.scss";
 
 function ProgressControl() {
   return (

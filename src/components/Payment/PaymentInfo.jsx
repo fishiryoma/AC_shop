@@ -1,4 +1,4 @@
-import styles from "./../../style/paymentInfo.module.scss";
+import styles from "./../../style/payment/paymentInfo.module.scss";
 
 export function DeliveryAddress() {
   return (

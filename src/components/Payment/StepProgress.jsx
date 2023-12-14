@@ -1,5 +1,5 @@
 import Step, { StepLine } from "./Step";
-import styles from "./../../style/stepProgess.module.scss";
+import styles from "./../../style/payment/stepProgess.module.scss";
 
 function StepProgress() {
   return (

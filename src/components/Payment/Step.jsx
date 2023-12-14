@@ -1,4 +1,4 @@
-import styles from "./../../style/step.module.scss";
+import styles from "./../../style/payment/step.module.scss";
 
 function Step({ stepNumber, stepDescription }) {
   return (

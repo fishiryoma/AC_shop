@@ -1,7 +1,7 @@
 import StepProgress from "./StepProgress";
 import { DeliveryAddress } from "./PaymentInfo";
 import ProgressControl from "./ProgressControl";
-import styles from "./../../style/payment.module.scss";
+import styles from "./../../style/payment/payment.module.scss";
 
 function Payment() {
   return (

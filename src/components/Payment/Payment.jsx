@@ -5,11 +5,13 @@ import styles from "./../../style/payment/payment.module.scss";
 
 function Payment() {
   return (
-    <div className={styles.container}>
-      <StepProgress />
-      <DeliveryAddress />
-      <ProgressControl />
-    </div>
+    <section className="payment">
+      <div className={styles.container}>
+        <StepProgress />
+        <DeliveryAddress />
+        <ProgressControl />
+      </div>
+    </section>
   );
 }
 

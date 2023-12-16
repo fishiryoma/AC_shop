@@ -1,0 +1,42 @@
+@import "./../colors.module.scss";
+
+.cart_list {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 5px;
+  }
+  .detail {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .product_price {
+      text-align: right;
+    }
+  }
+}
+
+.quantity_wrap {
+  display: flex;
+  gap: 3rem;
+  a.quantity_btn {
+    background-color: var(--light-white);
+    color: var(--black);
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+}

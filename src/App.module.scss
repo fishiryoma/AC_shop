@@ -1,0 +1,14 @@
+main {
+  .title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  .pay_wrap {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+}

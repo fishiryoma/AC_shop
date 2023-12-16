@@ -2,7 +2,7 @@ import styles from "./../../style/header/header.module.scss";
 
 function Header() {
   return (
-    <div>
+    <header>
       <div className={styles.container}>
         <img
           src="https://raw.githubusercontent.com/ALPHACamp/alpha-shop/c66f00cf6be37bc83cf2aa4412224cef51282380/public/icons/toggle.svg"
@@ -70,7 +70,7 @@ function Header() {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -4,8 +4,7 @@ import styles from "./../../style/payment/stepProgess.module.scss";
 function StepProgress() {
   return (
     <div>
-      <p className={styles.title}>結帳</p>
-      <div className={styles.stepWrap}>
+      <div className={styles.step_wrap}>
         <Step stepNumber={1} stepDescription="寄送地址" />
         <StepLine />
         <Step stepNumber={2} stepDescription="運送方式" />

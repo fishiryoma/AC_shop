@@ -1,4 +1,11 @@
+%container_center {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
 main {
+  @extend %container_center;
+  padding: 4rem 3rem 8rem 3rem;
   .title {
     font-size: 3.2rem;
     font-weight: 700;
@@ -11,4 +18,9 @@ main {
     justify-content: space-between;
     gap: 10rem;
   }
+}
+
+header {
+  @extend %container_center;
+  padding: 3rem;
 }

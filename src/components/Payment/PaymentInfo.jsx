@@ -82,9 +82,9 @@ export function DeliveryAddress() {
         </div>
 
         <div className={`${styles.inputGroup} ${styles.address}`}>
-          <lable className={styles.inputLabel} id="address">
+          <label className={styles.inputLabel} id="address">
             地址
-          </lable>
+          </label>
           <input type="text" placeholder="請輸入地址" id="address" />
         </div>
       </form>

@@ -17,7 +17,7 @@ const cartItem = [
     quantity: 1,
   },
 ];
-
+// 將整個list obj當成props傳至CartList
 function Cart() {
   const cartLits = cartItem.map((list) => (
     <CartList key={list.id} data={list} />

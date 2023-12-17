@@ -1,0 +1,28 @@
+@import "./../colors.module.scss";
+
+footer {
+  background-color: var(--dark-white);
+}
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  img {
+    width: 17rem;
+    align-self: center;
+    display: block;
+  }
+}
+
+.sns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  img {
+    width: 2rem;
+  }
+}

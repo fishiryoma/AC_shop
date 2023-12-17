@@ -1,7 +1,7 @@
 # ALPHA SHOP
 
 使用 React 框架打造出的電商購物網站
-![Alt text](public/img/index_v1.png)
+![Alt text](public/img/index_v2.png)
 
 ### 將網頁拆分成 Component
 

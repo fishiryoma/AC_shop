@@ -1,0 +1,41 @@
+[data-theme=light] {
+  --black: rgba(42, 42, 42, 1);
+  --light-grey: #777;
+  --bright-gery: #555;
+  --dark-white: #f1f3f5;
+  --light-white: rgba(240, 240, 245, 1);
+  --white: #fff;
+  --pink: rgba(246, 117, 153, 1);
+}
+
+[data-theme=dark] {
+  --light-white: rgba(128, 128, 128, 1);
+}
+
+footer {
+  background-color: var(--dark-white);
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+.container img {
+  width: 17rem;
+  align-self: center;
+  display: block;
+}
+
+.sns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.sns img {
+  width: 2rem;
+}/*# sourceMappingURL=footer.module.css.map */

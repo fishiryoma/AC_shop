@@ -1,0 +1,50 @@
+[data-theme=light] {
+  --black: rgba(42, 42, 42, 1);
+  --light-grey: #777;
+  --bright-gery: #555;
+  --dark-white: #f1f3f5;
+  --light-white: rgba(240, 240, 245, 1);
+  --white: #fff;
+  --pink: rgba(246, 117, 153, 1);
+}
+
+[data-theme=dark] {
+  --light-white: rgba(128, 128, 128, 1);
+}
+
+.mobileBtn,
+.navBtn {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.navItem {
+  font-size: 1.6rem;
+}
+
+.logoImg {
+  height: 3rem;
+  width: 17rem;
+}
+
+.container {
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 17rem 1fr;
+  align-items: center;
+}
+.container .mobileBtn {
+  display: none;
+}
+.container .navList {
+  display: flex;
+  gap: 3rem;
+}
+.container .navList .navLink {
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.container .siteActionList {
+  justify-content: end;
+}/*# sourceMappingURL=header.module.css.map */

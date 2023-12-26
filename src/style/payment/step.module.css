@@ -1,0 +1,42 @@
+[data-theme=light] {
+  --black: rgba(42, 42, 42, 1);
+  --light-grey: #777;
+  --bright-gery: #555;
+  --dark-white: #f1f3f5;
+  --light-white: rgba(240, 240, 245, 1);
+  --white: #fff;
+  --pink: rgba(246, 117, 153, 1);
+}
+
+[data-theme=dark] {
+  --light-white: rgba(128, 128, 128, 1);
+}
+
+.stepBox {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.stepNumber {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepDescription {
+  font-size: 1.6rem;
+}
+
+.line {
+  width: 16%;
+  height: 2px;
+  background-color: var(--black);
+}/*# sourceMappingURL=step.module.css.map */

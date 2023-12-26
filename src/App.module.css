@@ -1,0 +1,26 @@
+header,
+main {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+main {
+  padding: 4rem 3rem 8rem 3rem;
+}
+main .title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+main .pay_wrap {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  grid-template-rows: 49rem;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+header {
+  padding: 3rem;
+} /*# sourceMappingURL=App.module.css.map */

@@ -1,0 +1,53 @@
+[data-theme=light] {
+  --black: rgba(42, 42, 42, 1);
+  --light-grey: #777;
+  --bright-gery: #555;
+  --dark-white: #f1f3f5;
+  --light-white: rgba(240, 240, 245, 1);
+  --white: #fff;
+  --pink: rgba(246, 117, 153, 1);
+}
+
+[data-theme=dark] {
+  --light-white: rgba(128, 128, 128, 1);
+}
+
+.cart_list {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.cart_list img {
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 5px;
+}
+.cart_list .detail {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.cart_list .detail p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.cart_list .detail .product_price {
+  text-align: right;
+}
+
+.quantity_wrap {
+  display: flex;
+  gap: 3rem;
+}
+.quantity_wrap a.quantity_btn {
+  background-color: var(--light-white);
+  color: var(--black);
+  display: block;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}/*# sourceMappingURL=cartList.module.css.map */

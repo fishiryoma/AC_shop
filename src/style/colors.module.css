@@ -1,6 +1,6 @@
-[data-theme="light"] {
+[data-theme=light] {
   --black: rgba(42, 42, 42, 1);
-  --light-grey: #ced4da;
+  --light-grey: #777;
   --bright-gery: #555;
   --dark-white: #f1f3f5;
   --light-white: rgba(240, 240, 245, 1);
@@ -8,6 +8,6 @@
   --pink: rgba(246, 117, 153, 1);
 }
 
-[data-theme="dark"] {
+[data-theme=dark] {
   --light-white: rgba(128, 128, 128, 1);
-}
+}/*# sourceMappingURL=colors.module.css.map */

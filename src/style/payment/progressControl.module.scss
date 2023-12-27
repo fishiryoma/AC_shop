@@ -9,16 +9,20 @@
 .btnGroup {
   display: grid;
   grid-template-columns: 15rem auto 15rem;
-  a {
+  button {
     font-size: 1.4rem;
     font-weight: 400;
+    border: none;
     &.lastStep {
       grid-column: 1/2;
       align-self: center;
+      background-color: var(--white);
+      text-align: left;
     }
     &.nextStep {
       grid-column: 3/4;
       text-align: center;
+      line-height: 1.4rem;
       background-color: var(--pink);
       padding: 1rem 3rem;
       border-radius: 8px;

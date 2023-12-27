@@ -24,13 +24,11 @@ function Cart() {
   // 購物車數據設定為state
   const [item, setItem] = useState(initCartItem);
   // 編輯商品數量，並更新購物車
-  const editQuantity = (id, status) => {
+  const editQuantity = (id, quantity) => {
     const updatedQuantity = item
       .map((el) => {
         if (el.id === id) {
-          if (status === "plus") return { ...el, quantity: el.quantity + 1 };
-          if (status === "minus" && el.quantity !== 0)
-            return { ...el, quantity: el.quantity - 1 };
+          return { ...el, quantity: el.quantity + quantity };
         }
         return el;
       })
@@ -42,9 +40,7 @@ function Cart() {
   const totalPrice = () => {
     if (!item.length) return 0;
     // 計算總價
-    const price = item
-      .map((el) => el.price * el.quantity)
-      .reduce((accumulator, currentValue) => accumulator + currentValue);
+    const price = item.reduce((acc, cur) => acc + cur.quantity * cur.price, 0);
     return price;
   };
   // 渲染購物車

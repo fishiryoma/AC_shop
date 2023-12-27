@@ -27,9 +27,10 @@
 .quantity_wrap {
   display: flex;
   gap: 3rem;
-  a.quantity_btn {
+  button.quantity_btn {
     background-color: var(--light-white);
     color: var(--black);
+    border: none;
     display: block;
     width: 2.6rem;
     height: 2.6rem;

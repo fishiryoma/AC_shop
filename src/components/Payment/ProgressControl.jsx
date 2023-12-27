@@ -1,17 +1,18 @@
 import styles from "./../../style/payment/progressControl.module.scss";
 
 function ProgressControl({ onClick, step }) {
-  // 接收目前的step & 控制按鈕的函數props
-  const handleClick = (e) => {
-    onClick(e);
-  };
   // 上一步按鈕
   const previousBtn = () => {
     if (step !== 1) {
       return (
-        <a className={styles.lastStep} name="previous">
+        <button
+          className={styles.lastStep}
+          onClick={() => {
+            if (step > 1) onClick(-1);
+          }}
+        >
           &larr; 上一步
-        </a>
+        </button>
       );
     }
     return;
@@ -26,11 +27,16 @@ function ProgressControl({ onClick, step }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.btnGroup} onClick={handleClick}>
+      <div className={styles.btnGroup}>
         {previousBtn()}
-        <a className={styles.nextStep} name="next">
+        <button
+          className={styles.nextStep}
+          onClick={() => {
+            if (step < 3) onClick(1);
+          }}
+        >
           {nextMsg()} &rarr;
-        </a>
+        </button>
       </div>
     </div>
   );

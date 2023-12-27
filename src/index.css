@@ -41,6 +41,9 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 li {
   list-style: none;
 }

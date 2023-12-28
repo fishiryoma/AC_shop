@@ -1,52 +1,12 @@
+import CartContext from "./../../cartContext";
 import styles from "./../../style/cart/cart.module.scss";
 import CartList from "./CartList";
-import { useState } from "react";
-
-// 起始數據
-const initCartItem = [
-  {
-    id: "1",
-    name: "貓咪罐罐",
-    img: "https://picsum.photos/300/300?text=1",
-    price: 100,
-    quantity: 4,
-  },
-  {
-    id: "2",
-    name: "貓咪干干",
-    img: "https://picsum.photos/300/300?text=2",
-    price: 200,
-    quantity: 2,
-  },
-];
+import { useContext } from "react";
 
 function Cart() {
-  // 購物車數據設定為state
-  const [item, setItem] = useState(initCartItem);
-  // 編輯商品數量，並更新購物車
-  const editQuantity = (id, quantity) => {
-    const updatedQuantity = item
-      .map((el) => {
-        if (el.id === id) {
-          return { ...el, quantity: el.quantity + quantity };
-        }
-        return el;
-      })
-      .filter((el) => el.quantity !== 0);
-    // 確認是否有數量為0的商品，若有則移除出購物車
-    setItem(updatedQuantity);
-  };
-
-  const totalPrice = () => {
-    if (!item.length) return 0;
-    // 計算總價
-    const price = item.reduce((acc, cur) => acc + cur.quantity * cur.price, 0);
-    return price;
-  };
+  const { item, totalPrice } = useContext(CartContext);
   // 渲染購物車
-  const cartLits = item.map((el) => (
-    <CartList key={el.id} list={el} editQuantity={editQuantity} />
-  ));
+  const cartLits = item.map((el) => <CartList key={el.id} list={el} />);
 
   return (
     <section className="cart">

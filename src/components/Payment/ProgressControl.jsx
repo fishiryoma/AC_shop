@@ -1,13 +1,17 @@
+import { useContext } from "react";
+import CartContext from "../../cartContext";
 import styles from "./../../style/payment/progressControl.module.scss";
 
 function ProgressControl({ onClick, step }) {
+  const { showCardinfo } = useContext(CartContext);
   // 上一步按鈕
   const previousBtn = () => {
     if (step !== 1) {
       return (
         <button
           className={styles.lastStep}
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             if (step > 1) onClick(-1);
           }}
         >
@@ -25,16 +29,17 @@ function ProgressControl({ onClick, step }) {
     return "下一步";
   };
 
+  function handleClick(e) {
+    e.preventDefault();
+    if (step < 3) onClick(1);
+    if (step === 3) showCardinfo();
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.btnGroup}>
         {previousBtn()}
-        <button
-          className={styles.nextStep}
-          onClick={() => {
-            if (step < 3) onClick(1);
-          }}
-        >
+        <button type="submit" className={styles.nextStep} onClick={handleClick}>
           {nextMsg()} &rarr;
         </button>
       </div>

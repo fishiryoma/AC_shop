@@ -1,6 +1,9 @@
+import CartContext from "../../cartContext";
 import styles from "./../../style/cart/cartList.module.scss";
+import { useContext } from "react";
 
-function CartList({ list, editQuantity }) {
+function CartList({ list }) {
+  const { editQuantity } = useContext(CartContext);
   return (
     <li className={styles.cart_list}>
       <img src={list.img} alt="cart" />

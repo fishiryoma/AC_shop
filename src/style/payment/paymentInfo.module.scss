@@ -1,7 +1,6 @@
 @import "./../colors.module.scss";
 
 .container {
-  height: 35rem;
   input::placeholder {
     color: var(--light-grey);
   }
@@ -14,8 +13,10 @@
 }
 
 .form {
+  height: 32rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 5rem) auto;
   gap: 2rem;
   margin-bottom: 4rem;
 }
